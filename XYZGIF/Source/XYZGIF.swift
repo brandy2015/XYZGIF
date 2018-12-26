@@ -21,8 +21,8 @@ import SHTManager
 import MobileCoreServices            //picker.mediaTypes的类型
 import PhotosUI                      //LivePhoto使用的依赖库
 
-public class GIFToVideoObject: NSObject {
-    static var CurrentGIFToVideo = GIFToVideoObject()
+public class XYZGIF: NSObject {
+    public static var CurrentGIFToVideo = XYZGIF()
     
     
     

@@ -13,7 +13,7 @@
 		D6C6E04F21D3789000306857 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6C6E04E21D3789000306857 /* Assets.xcassets */; };
 		D6C6E05221D3789000306857 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6C6E05021D3789000306857 /* LaunchScreen.storyboard */; };
 		D6C6E05A21D378AD00306857 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D6C6E05921D378AD00306857 /* LICENSE */; };
-		D6C6E06021D3791000306857 /* GIFToVideoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C6E05E21D3791000306857 /* GIFToVideoObject.swift */; };
+		D6C6E06021D3791000306857 /* XYZGIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C6E05E21D3791000306857 /* XYZGIF.swift */; };
 		D6C6E06121D3791000306857 /* GIFToMP4.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C6E05F21D3791000306857 /* GIFToMP4.swift */; };
 		D6C6E06521D37E3D00306857 /* XYZGIF.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D6C6E06421D37E3C00306857 /* XYZGIF.podspec */; };
 		E5A1EDF005DBAE073A05C970 /* Pods_XYZGIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CAECBA6459A5839C2DD91C3 /* Pods_XYZGIF.framework */; };
@@ -30,7 +30,7 @@
 		D6C6E05121D3789000306857 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6C6E05321D3789000306857 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6C6E05921D378AD00306857 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		D6C6E05E21D3791000306857 /* GIFToVideoObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIFToVideoObject.swift; sourceTree = "<group>"; };
+		D6C6E05E21D3791000306857 /* XYZGIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYZGIF.swift; sourceTree = "<group>"; };
 		D6C6E05F21D3791000306857 /* GIFToMP4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIFToMP4.swift; sourceTree = "<group>"; };
 		D6C6E06421D37E3C00306857 /* XYZGIF.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XYZGIF.podspec; sourceTree = "<group>"; };
 		F9D7E4FD9301860C2738F3AB /* Pods-XYZGIF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYZGIF.release.xcconfig"; path = "Target Support Files/Pods-XYZGIF/Pods-XYZGIF.release.xcconfig"; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				D6C6E05F21D3791000306857 /* GIFToMP4.swift */,
-				D6C6E05E21D3791000306857 /* GIFToVideoObject.swift */,
+				D6C6E05E21D3791000306857 /* XYZGIF.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -238,7 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6C6E06021D3791000306857 /* GIFToVideoObject.swift in Sources */,
+				D6C6E06021D3791000306857 /* XYZGIF.swift in Sources */,
 				D6C6E04A21D3788F00306857 /* ViewController.swift in Sources */,
 				D6C6E04821D3788F00306857 /* AppDelegate.swift in Sources */,
 				D6C6E06121D3791000306857 /* GIFToMP4.swift in Sources */,
