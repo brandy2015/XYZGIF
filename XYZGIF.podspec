@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
     s.name         = "XYZGIF"
-    s.version      = "0.0.3"
+    s.version      = "0.0.4"
     s.summary      = "Deal with GIF."
     s.description  = <<-DESC
         Private pod to deal with GIF
@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
     s.author             = { "Brandy" => "" }
     s.authors            = { "Brandy" => "zhangqianbrandy2012@gmail.com" }
     s.platform     = :ios, "11.1"
-    s.source       = { :git => "https://github.com/brandy2015/XYZGIF.git", :tag => "0.0.3"}
+    s.source       = { :git => "https://github.com/brandy2015/XYZGIF.git", :tag => "0.0.4"}
     s.source_files = "XYZGIF/Source/*"
 
 
