@@ -13,9 +13,9 @@
 		D6C6E04F21D3789000306857 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6C6E04E21D3789000306857 /* Assets.xcassets */; };
 		D6C6E05221D3789000306857 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6C6E05021D3789000306857 /* LaunchScreen.storyboard */; };
 		D6C6E05A21D378AD00306857 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D6C6E05921D378AD00306857 /* LICENSE */; };
-		D6C6E05C21D378B200306857 /* XYZGIF.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D6C6E05B21D378B200306857 /* XYZGIF.podspec */; };
 		D6C6E06021D3791000306857 /* GIFToVideoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C6E05E21D3791000306857 /* GIFToVideoObject.swift */; };
 		D6C6E06121D3791000306857 /* GIFToMP4.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C6E05F21D3791000306857 /* GIFToMP4.swift */; };
+		D6C6E06521D37E3D00306857 /* XYZGIF.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D6C6E06421D37E3C00306857 /* XYZGIF.podspec */; };
 		E5A1EDF005DBAE073A05C970 /* Pods_XYZGIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CAECBA6459A5839C2DD91C3 /* Pods_XYZGIF.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,9 +30,9 @@
 		D6C6E05121D3789000306857 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6C6E05321D3789000306857 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6C6E05921D378AD00306857 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		D6C6E05B21D378B200306857 /* XYZGIF.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XYZGIF.podspec; sourceTree = "<group>"; };
 		D6C6E05E21D3791000306857 /* GIFToVideoObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIFToVideoObject.swift; sourceTree = "<group>"; };
 		D6C6E05F21D3791000306857 /* GIFToMP4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIFToMP4.swift; sourceTree = "<group>"; };
+		D6C6E06421D37E3C00306857 /* XYZGIF.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XYZGIF.podspec; sourceTree = "<group>"; };
 		F9D7E4FD9301860C2738F3AB /* Pods-XYZGIF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYZGIF.release.xcconfig"; path = "Target Support Files/Pods-XYZGIF/Pods-XYZGIF.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,7 +62,6 @@
 				5406C10A4FD3625A70C66415 /* Pods-XYZGIF.debug.xcconfig */,
 				F9D7E4FD9301860C2738F3AB /* Pods-XYZGIF.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -70,7 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				D6C6E05921D378AD00306857 /* LICENSE */,
-				D6C6E05B21D378B200306857 /* XYZGIF.podspec */,
+				D6C6E06421D37E3C00306857 /* XYZGIF.podspec */,
 				D6C6E04621D3788F00306857 /* XYZGIF */,
 				D6C6E04521D3788F00306857 /* Products */,
 				819013AA50F4E708A32E6324 /* Pods */,
@@ -89,7 +88,7 @@
 		D6C6E04621D3788F00306857 /* XYZGIF */ = {
 			isa = PBXGroup;
 			children = (
-				D6C6E05D21D3790100306857 /* Classes */,
+				D6C6E05D21D3790100306857 /* Source */,
 				D6C6E04721D3788F00306857 /* AppDelegate.swift */,
 				D6C6E04921D3788F00306857 /* ViewController.swift */,
 				D6C6E04B21D3788F00306857 /* Main.storyboard */,
@@ -100,13 +99,13 @@
 			path = XYZGIF;
 			sourceTree = "<group>";
 		};
-		D6C6E05D21D3790100306857 /* Classes */ = {
+		D6C6E05D21D3790100306857 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				D6C6E05F21D3791000306857 /* GIFToMP4.swift */,
 				D6C6E05E21D3791000306857 /* GIFToVideoObject.swift */,
 			);
-			path = Classes;
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,8 +169,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6C6E05221D3789000306857 /* LaunchScreen.storyboard in Resources */,
-				D6C6E05C21D378B200306857 /* XYZGIF.podspec in Resources */,
 				D6C6E04F21D3789000306857 /* Assets.xcassets in Resources */,
+				D6C6E06521D37E3D00306857 /* XYZGIF.podspec in Resources */,
 				D6C6E05A21D378AD00306857 /* LICENSE in Resources */,
 				D6C6E04D21D3788F00306857 /* Main.storyboard in Resources */,
 			);

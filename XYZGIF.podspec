@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint XYZGIF.podspec' to ensure this is a
+#  Be sure to run `pod spec lint SoHow.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -8,44 +8,86 @@
 
 Pod::Spec.new do |s|
 
+  # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  These will help people to find your library, and whilst it
+  #  can feel like a chore to fill in it's definitely to your advantage. The
+  #  summary should be tweet-length, and the description more in depth.
+  #
+
+    s.name         = "XYZGIF"
+    s.version      = "0.0.1"
+    s.summary      = "Deal with GIF."
+    s.description  = <<-DESC
+        Private pod to deal with GIF
+
+      DESC
+
+    s.homepage     = "https://github.com/brandy2015"
+    s.license      = "MIT"
+    s.swift_version = '4.2'
+    s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
+    s.ios.deployment_target = '11.1'
 
 
-  s.name         = "XYZGIF"
-  s.version      = "0.0.1"
-  s.summary      = "持续升级"
-  s.description  = <<-DESC
-                      GIF I need
-                   DESC
-
-  s.homepage     = "https://github.com/brandy2015/XYZGIF"
-
-  s.license      = "MIT"
-
-  s.swift_version = '4.2'
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
+    s.dependency 'FileKit'
+    s.dependency 'SwiftyGif'
+    s.dependency 'SHPathManager'          # 自己的文件路径管理
+    s.dependency 'SHTManager'             # 自己的时间管理
+    s.dependency 'SwiftDate'              # 依赖的时间库    #依赖
 
 
-  s.dependency 'FileKit'
-  s.dependency 'SwiftyGif'
-  s.dependency 'SHPathManager'          # 自己的文件路径管理
-  s.dependency 'SHTManager'             # 自己的时间管理
-  s.dependency 'SwiftDate'              # 依赖的时间库    #依赖
+    s.author             = { "Brandy" => "" }
+    s.authors            = { "Brandy" => "zhangqianbrandy2012@gmail.com" }
+    s.platform     = :ios, "11.1"
+    s.source       = { :git => "https://github.com/brandy2015/XYZGIF.git", :tag => "0.0.1"}
+    s.source_files = "XYZGIF/Source/*"
 
-  s.ios.deployment_target = '10.0'
+
+  # This description is used to generate tags and improve search results.
+  #   * Think: What does it do? Why did you write it? What is the focus?
+  #   * Try to keep it short, snappy and to the point.
+  #   * Write the description between the DESC delimiters below.
+  #   * Finally, don't worry about the indent, CocoaPods strips it!
+
+
+
+
+
+  # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
+
+
+  # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  Licensing your code is important. See http://choosealicense.com for more info.
+  #  CocoaPods will detect a license file if there is a named LICENSE*
+  #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
+  #
+
+
+
+
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
-  s.author             = { "Brandy" => "" }
 
 
-  s.authors            = { "Brandy" => "zhangqianbrandy2012@gmail.com" }
-  s.platform     = :ios, "10.0"
-  s.source       = { :git => "https://github.com/brandy2015/XYZGIF.git", :tag => "0.0.1"}
-  s.source_files = 'XYZGIF/Classes/**/*'
-  s.ios.source_files = 'XYZGIF/Classes/**/*'
+  # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  Specify the authors of the library, with email addresses. Email addresses
+  #  of the authors are extracted from the SCM log. E.g. $ git log. CocoaPods also
+  #  accepts just a name if you'd rather not provide an email address.
+  #
+  #  Specify a social_media_url where others can refer to, for example a twitter
+  #  profile URL.
+  #
 
-#s.resource_bundles = {
-# 'XYZGIF' => ['XYZGIF/*.{xcassets,png,json,.imageset}']
-# }
 
+
+
+
+
+  # Or just: s.author    = "Brandy"
+
+  # s.social_media_url   = "http://twitter.com/Brandy"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -54,7 +96,6 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-
 
 
 
@@ -74,7 +115,7 @@ Pod::Spec.new do |s|
 
 
 
-#{ :git => "http://EXAMPLE/XYZGIF.git", :tag => "#{s.version}" }
+#{ :git => "http://EXAMPLE/SoHow.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -85,7 +126,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-#s.source_files  = "XYZGIF"#, "XYZGIF/**/*.{h,m}"
+#s.source_files  = "SoHow"#, "SoHow/**/*.{h,m}"
 #  s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"

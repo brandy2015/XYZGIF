@@ -18,10 +18,13 @@ import ImageIO
 import SHPathManager
 import FileKit
 import SHTManager
+import MobileCoreServices            //picker.mediaTypes的类型
+import PhotosUI                      //LivePhoto使用的依赖库
 
-
-var CurrentGIFToVideo = GIFToVideoObject()
 public class GIFToVideoObject: NSObject {
+    static var CurrentGIFToVideo = GIFToVideoObject()
+    
+    
     
     var GIFURL = URL.init(string: "")
     var ToURL = URL.init(string: "")
@@ -85,8 +88,7 @@ public class GIFToVideoObject: NSObject {
     }
     
 }
-import MobileCoreServices            //picker.mediaTypes的类型
-import PhotosUI                      //LivePhoto使用的依赖库
+
 public extension UIImage{
     
     public static func saveGIFToAlbum(withURL URLx:URL)  {
