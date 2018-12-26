@@ -1,0 +1,6 @@
+framework module Pods_XYZGIF {
+  umbrella header "Pods-XYZGIF-umbrella.h"
+
+  export *
+  module * { export * }
+}

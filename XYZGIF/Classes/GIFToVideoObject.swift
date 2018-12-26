@@ -18,7 +18,6 @@ import ImageIO
 import SHPathManager
 import FileKit
 import SHTManager
-import FileKit
 
 
 var CurrentGIFToVideo = GIFToVideoObject()

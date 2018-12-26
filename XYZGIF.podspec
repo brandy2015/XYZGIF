@@ -25,10 +25,11 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
 
 
-
-
+  s.dependency 'FileKit'
   s.dependency 'SwiftyGif'
-
+  s.dependency 'SHPathManager'          # 自己的文件路径管理
+  s.dependency 'SHTManager'             # 自己的时间管理
+  s.dependency 'SwiftDate'              # 依赖的时间库    #依赖
 
   s.ios.deployment_target = '10.0'
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
