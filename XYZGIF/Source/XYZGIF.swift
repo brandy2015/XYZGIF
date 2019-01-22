@@ -26,8 +26,8 @@ public class XYZGIF: NSObject {
     
     
     
-    var GIFURL = URL.init(string: "")
-    var ToURL = URL.init(string: "")
+    public var GIFURL = URL.init(string: "")
+    public var ToURL = URL.init(string: "")
     
     override init() {}
     
@@ -36,11 +36,11 @@ public class XYZGIF: NSObject {
         self.ToURL  = ToURL
     }
     
-    func ShowGIF(with imgView:UIImageView,and URLx:URL)  {
+    public func ShowGIF(with imgView:UIImageView,and URLx:URL)  {
         imgView.setGifFromURL(URLx)
     }
     
-    func ShowGIFs(with imgViews:[UIImageView],and URLxs:[URL])  {
+    public func ShowGIFs(with imgViews:[UIImageView],and URLxs:[URL])  {
         
         for i in 0...imgViews.count-1{
             imgViews[i].setGifFromURL(URLxs[i])
@@ -52,7 +52,7 @@ public class XYZGIF: NSObject {
     
     
     //成批量生成
-    func createVideo(DataURL:URL,ToURL:URL? = nil,completion:@escaping ()->Void) -> Bool{
+    public func createVideo(DataURL:URL,ToURL:URL? = nil,completion:@escaping ()->Void) -> Bool{
         if let data = try? Data(contentsOf: DataURL){
             if let ToURL = ToURL{
                 GIFToMP4(data: data)?.convertAndExport(to: ToURL, completion: {
@@ -73,7 +73,7 @@ public class XYZGIF: NSObject {
     }
     
     
-    func 转换每一帧的数组(GIF:UIImage) -> [UIImage]? {
+    public func 转换每一帧的数组(GIF:UIImage) -> [UIImage]? {
         var 数组 = [UIImage]()
         if let urlx = Bundle.main.url(forResource: "my", withExtension: "gif"){
             if let x = CGImageSourceCreateWithURL(urlx as CFURL, nil){
