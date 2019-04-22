@@ -60,7 +60,9 @@ public class XYZGIF: NSObject {
                     
                 })
             }else{
-                let tempUrl = userDocument + "\(SHTManager.NowString).mp4"
+                
+                
+                let tempUrl = userDocument + "\(XYZTime.NowString).mp4"
                 GIFToMP4(data: data)?.convertAndExport(to: tempUrl.url, completion: {
                     completion()
                 })
@@ -91,9 +93,21 @@ public class XYZGIF: NSObject {
 
 public extension UIImage{
     
-    public static func saveGIFToAlbum(withURL URLx:URL)  {
+    static func saveGIFToAlbum(withURL URLx:URL)  {
         PHPhotoLibrary.shared().performChanges({
             PHAssetChangeRequest.creationRequestForAssetFromImage(atFileURL: URLx)
+        }) { (isSuccess: Bool, error: Error?) in
+            if isSuccess {print("保存成功")} else{ print("保存失败：", error!.localizedDescription)}
+        }
+    }
+}
+
+
+public extension URL{
+    
+    func saveToAlbum()  {
+        PHPhotoLibrary.shared().performChanges({
+            PHAssetChangeRequest.creationRequestForAssetFromImage(atFileURL: self)
         }) { (isSuccess: Bool, error: Error?) in
             if isSuccess {print("保存成功")} else{ print("保存失败：", error!.localizedDescription)}
         }
