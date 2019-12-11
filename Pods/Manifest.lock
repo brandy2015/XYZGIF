@@ -1,13 +1,13 @@
 PODS:
   - FileKit (5.2.0)
-  - SHPathManager (1.0.3):
+  - SHPathManager (1.1.1):
     - FileKit
     - SHTManager
     - SwiftDate
-  - SHTManager (1.0.2):
+  - SHTManager (1.1.1):
     - SwiftDate
-  - SwiftDate (6.0.2)
-  - SwiftyGif (5.0.0)
+  - SwiftDate (6.1.0)
+  - SwiftyGif (5.2.0)
 
 DEPENDENCIES:
   - FileKit
@@ -17,7 +17,7 @@ DEPENDENCIES:
   - SwiftyGif
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - FileKit
     - SHPathManager
     - SHTManager
@@ -26,11 +26,11 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   FileKit: 10bfd8a3023a0b09f24c9f49546cbbddf43fd464
-  SHPathManager: eaa033c734437e6f7d384e0093612d1f70fc7af8
-  SHTManager: 76205c8692aef617b0cd7918f7b7dd25b20a97ad
-  SwiftDate: bbed9b23bfec599bd62b9a305afc554f7bd0eb6f
-  SwiftyGif: 67490485c3b1fa19013d9613fab31de4629450fb
+  SHPathManager: 01f50414c1c91da661aea1179eb24f612577ed4b
+  SHTManager: ad5f32c70807dd4bd6e663babd77db5ee0c09da3
+  SwiftDate: fa2bb3962056bb44047b4b85a30044e5eae30b03
+  SwiftyGif: b85c6b33a9411859d9e1db998b6a8214aea942df
 
-PODFILE CHECKSUM: e756eeafce10a9d164f21c63a8708199fb4bac67
+PODFILE CHECKSUM: 52c91259099765fd593fbb17153d9eb86a2b92c9
 
-COCOAPODS: 1.7.0.beta.3
+COCOAPODS: 1.8.4
