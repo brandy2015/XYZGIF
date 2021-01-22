@@ -7,8 +7,7 @@ target 'XYZGIF' do
 
   # Pods for XYZGIF
 	pod 'SwiftyGif'
-	pod 'SHPathManager'          # 自己的文件路径管理
-        pod 'FileKit'                # 依赖的文件的操作 #依赖库
-	pod 'SHTManager'             # 自己的时间管理
-        pod 'SwiftDate'              # 依赖的时间库    #依赖
+	pod 'XYZPathKit'  # 自己的文件路径管理
+ 	pod 'XYZTimeKit'  # 自己的时间管理
+
 end

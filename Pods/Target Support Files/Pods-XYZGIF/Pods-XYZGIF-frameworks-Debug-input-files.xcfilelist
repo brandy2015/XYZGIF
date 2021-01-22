@@ -1,6 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-XYZGIF/Pods-XYZGIF-frameworks.sh
-${BUILT_PRODUCTS_DIR}/FileKit/FileKit.framework
-${BUILT_PRODUCTS_DIR}/SHPathManager/SHPathManager.framework
-${BUILT_PRODUCTS_DIR}/SHTManager/SHTManager.framework
-${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework
 ${BUILT_PRODUCTS_DIR}/SwiftyGif/SwiftyGif.framework
+${BUILT_PRODUCTS_DIR}/XYZPathKit/XYZPathKit.framework
+${BUILT_PRODUCTS_DIR}/XYZTimeKit/XYZTimeKit.framework
