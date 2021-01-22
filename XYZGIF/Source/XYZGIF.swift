@@ -15,11 +15,10 @@ import AVFoundation
 import QuartzCore
 import SwiftyGif
 import ImageIO
-import SHPathManager
-import FileKit
-import SHTManager
 import MobileCoreServices            //picker.mediaTypes的类型
 import PhotosUI                      //LivePhoto使用的依赖库
+import XYZPathKit
+import XYZTimeKit
 
 public class XYZGIF: NSObject {
     public static var CurrentGIFToVideo = XYZGIF()
