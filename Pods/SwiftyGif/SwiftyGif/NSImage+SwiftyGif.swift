@@ -1,11 +1,11 @@
 //
-//  UIImage+SwiftyGif.swift
+//  NSImage+SwiftyGif.swift
 //
 
-#if !os(macOS)
+#if os(macOS)
 
 import ImageIO
-import UIKit
+import AppKit
 
 public typealias GifLevelOfIntegrity = Float
 
@@ -36,7 +36,7 @@ extension GifParseError: LocalizedError {
     }
 }
 
-public extension UIImage {
+public extension NSImage {
     /// Convenience initializer. Creates a gif with its backing data.
     ///
     /// - Parameter imageData: The actual image data, can be GIF or some other format
@@ -66,7 +66,7 @@ public extension UIImage {
 
 // MARK: - Inits
 
-public extension UIImage {
+public extension NSImage {
     
     /// Convenience initializer. Creates a gif with its backing data.
     ///
@@ -209,21 +209,10 @@ public extension UIImage {
     private func calculateFrameDelay(_ delaysArray: [Float], levelOfIntegrity: GifLevelOfIntegrity) {
         let levelOfIntegrity = max(0, min(1, levelOfIntegrity))
         var delays = delaysArray
-
-        var displayRefreshFactors = [Int]()
-
-        if #available(iOS 10.3, *) {
-          // Will be 120 on devices with ProMotion display, 60 otherwise.
-          displayRefreshFactors.append(UIScreen.main.maximumFramesPerSecond)
-        }
-
-        if displayRefreshFactors[0] != 60 {
-          // Append 60 if needed.
-          displayRefreshFactors.append(60)
-        }
-
-        displayRefreshFactors.append(contentsOf: [30, 20, 15, 12, 10, 6, 5, 4, 3, 2, 1])
-
+        
+        // Factors send to CADisplayLink.frameInterval
+        let displayRefreshFactors = [60, 30, 20, 15, 12, 10, 6, 5, 4, 3, 2, 1]
+        
         // maxFramePerSecond,default is 60
         let maxFramePerSecond = displayRefreshFactors[0]
         
@@ -281,7 +270,8 @@ public extension UIImage {
                 return
         }
         
-        let image = UIImage(cgImage: cgImage)
+        
+        let image = NSImage(cgImage: cgImage, size: .zero)
         imageSize = Int(image.size.height * image.size.width * 4) * imageCount / 1_000_000
     }
 }
@@ -295,7 +285,7 @@ private let _imageCountKey = malloc(4)
 private let _displayOrderKey = malloc(4)
 private let _imageDataKey = malloc(4)
 
-public extension UIImage {
+public extension NSImage {
     
     var imageSource: CGImageSource? {
         get {

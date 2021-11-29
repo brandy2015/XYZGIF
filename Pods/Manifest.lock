@@ -1,8 +1,8 @@
 PODS:
-  - SwiftyGif (5.3.0)
-  - XYZPathKit (3.0.1):
+  - SwiftyGif (5.4.0)
+  - XYZPathKit (3.0.2):
     - XYZTimeKit
-  - XYZTimeKit (3.0.1)
+  - XYZTimeKit (3.0.2)
 
 DEPENDENCIES:
   - SwiftyGif
@@ -16,10 +16,10 @@ SPEC REPOS:
     - XYZTimeKit
 
 SPEC CHECKSUMS:
-  SwiftyGif: e466e86c660d343357ab944a819a101c4127cb40
-  XYZPathKit: 156c2652202f98e47f41a8767b62be8e614ea80c
-  XYZTimeKit: 83a8914a1ee29119ba8afc1615edae979594db1c
+  SwiftyGif: 5d4af95df24caf1c570dbbcb32a3b8a0763bc6d7
+  XYZPathKit: 587af60d716dcdf7329ab7f52ced23a4bffb5abf
+  XYZTimeKit: 6617293c8728041a35e064d82858ee2737ae3f84
 
 PODFILE CHECKSUM: bfe589e4ab27e6fe65d41725e0e08f6a341c07b2
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.2
